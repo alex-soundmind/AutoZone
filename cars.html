@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог авто</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./cars.css" />
+    <script src="./index.js" defer></script>
+    <script src="./cars.js" defer></script>
+  </head>
+  <body class="cars-page">
+  <main id="cars__main">
+      <section>
+        <div class="container cars-page">
+          <div class="row">
+            <div class="cars__header">
+              <h2 class="section__title cars__header--title">
+                Каталог автомобилей
+              </h2>
+              <select id="filter-select">
+                <option value="">Выберите категорию</option>
+                <option value="Sedans">Седаны</option>
+                <option value="Roadsters">Родстеры</option>
+                <option value="Universal">Универсалы</option>
+                <option value="Electric vehicles">Электромобили</option>
+                <option value="SUVs">Внедорожники</option>   
+              </select>
+            </div>
+            <div class="cars__loading"></div>
+            <div id="categories" class="categories"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row row__column">
+          <a href="./index.html">
+            <figure class="footer__logo">
+              <img
+                src="https://www.freepnglogos.com/uploads/autozone-png-logo/autozone-customer-service-number-autozonem-800-phone--23.png"
+                class="footer__logo--img"/>
+            </figure>
+          </a>
+          <div class="footer__copyright">
+            Copyright &copy; AutoZone
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
