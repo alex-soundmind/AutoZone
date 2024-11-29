@@ -1,0 +1,540 @@
+
+
+{
+  "cars": [
+    {
+          "title": "Tesla Model S",
+          "manufacturer": "Tesla",
+          "cover_img": "https://moscowteslaclub.ru/upload/resize_cache/iblock/a96/1266_715_2/u7020phlg75raemslibg35g4a8gufe3v.jpg",
+          "description": "Электрический седан класса люкс с передовыми технологиями и высокой производительностью.",
+          "specifications": [
+              "Двигатель: Электрический",
+              "Запас хода: 652 км",
+              "Мощность: 670 л.с.",
+              "Трансмиссия: Одноступенчатая автоматическая",
+              "Привод: Полный",
+              "Вместимость: 5 мест"
+          ],
+          "price": 5000000,
+          "availability": "В наличии",
+          "star_rating": 4.8,
+          "rating_count": 5620,
+          "category": "Electric vehicles",
+          "other_info": "Гарантия: 4 года или 80 000 км <br> Габариты: 4970 x 1964 x 1445 мм <br> Вес: 2215 кг <br> Максимальная скорость: 250 км/ч"
+      },
+      {
+          "title": "Ford Mustang Mach-E",
+          "manufacturer": "Ford",
+          "cover_img": "https://content.homenetiol.com/2000292/2214646/0x0/stock_images/5/2024FOS39_640/2024FOS390033_640_01.jpg",
+          "description": "Электрический кроссовер с мощностью и стилем Mustang.",
+          "specifications": [
+              "Двигатель: Электрический",
+              "Запас хода: 483 км",
+              "Мощность: 480 л.с.",
+              "Трансмиссия: Одноступенчатая автоматическая",
+              "Привод: Полный",
+              "Вместимость: 5 мест"
+          ],
+          "price": 8000000,
+          "availability": "Под заказ",
+          "star_rating": 4.5,
+          "rating_count": 3200,
+          "category": "Electric vehicles",
+          "other_info": "Гарантия: 3 года или 60 000 км <br> Габариты: 4713 x 1881 x 1621 мм <br> Вес: 2181 кг <br> Максимальная скорость: 180 км/ч"
+      },
+      {
+          "title": "Toyota Land Cruiser 300",
+          "manufacturer": "Toyota",
+          "cover_img": "https://b4051664-be9e-4979-89c4-770444c116cd.selcdn.net/media/common/model_gallery_preview_large/tradeins.space/uploads/photo/11160392/33c04c2708cfeb334e7e78c137fae2f2.png?v63",
+          "description": "Полноразмерный внедорожник для любых условий с мощным двигателем.",
+          "specifications": [
+              "Двигатель: 3.5-литровый V6",
+              "Мощность: 415 л.с.",
+              "Трансмиссия: 10-ступенчатая автоматическая",
+              "Привод: Полный",
+              "Вместимость: 7 мест"
+          ],
+          "price": 7000000,
+          "availability": "В наличии",
+          "star_rating": 4.7,
+          "rating_count": 4500,
+          "category": "SUVs",
+          "other_info": "Гарантия: 5 лет или 150 000 км <br> Габариты: 4985 x 1980 x 1945 мм <br> Вес: 2600 кг <br> Максимальная скорость: 210 км/ч"
+      },
+      {
+          "title": "BMW X5",
+          "manufacturer": "BMW",
+          "cover_img": "https://apiweb.rolf.ru/storage/thumbnails/large/models/14-bmw/4921-x5_new/c65f831967794f342c1ab1d8464c7d58.png",
+          "description": "Современный внедорожник премиум-класса с инновационными технологиями.",
+          "specifications": [
+              "Двигатель: 3.0-литровый рядный 6-цилиндровый",
+              "Мощность: 340 л.с.",
+              "Трансмиссия: 8-ступенчатая автоматическая",
+              "Привод: Полный",
+              "Вместимость: 5 мест"
+          ],
+          "price": 6000000,
+          "availability": "Под заказ",
+          "star_rating": 4.6,
+          "rating_count": 3800,
+          "category": "SUVs",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4935 x 2004 x 1774 мм <br> Вес: 2300 кг <br> Максимальная скорость: 243 км/ч"
+      },
+      {
+          "title": "Volkswagen Passat",
+          "manufacturer": "Volkswagen",
+          "cover_img": "https://assets.volkswagen.com/is/image/volkswagenag/Passat%20Alltrack%203-4%20view%20Elegance-1?Zml0PWNyb3AsMSZmbXQ9d2VicC1hbHBoYSZxbHQ9Nzkmd2lkPTgwMCZiZmM9b2ZmJjU0MDQ=",
+          "description": "Надежный седан с классическим дизайном и современными технологиями.",
+          "specifications": [
+              "Двигатель: 2.0-литровый TSI",
+              "Мощность: 190 л.с.",
+              "Трансмиссия: 7-ступенчатая DSG",
+              "Привод: Передний",
+              "Вместимость: 5 мест"
+          ],
+          "price": 8000000,
+          "availability": "В наличии",
+          "star_rating": 4.4,
+          "rating_count": 2900,
+          "category": "Sedans",
+          "other_info": "Гарантия: 2 года или 50 000 км <br> Габариты: 4775 x 1832 x 1483 мм <br> Вес: 1525 кг <br> Максимальная скорость: 230 км/ч"
+      },
+      {
+          "title": "Mazda MX-5",
+          "manufacturer": "Mazda",
+          "cover_img": "https://autoglass-russia.ru/img/auto/mazda-mx5.png",
+          "description": "Легендарный родстер с легкой конструкцией и потрясающей управляемостью.",
+          "specifications": [
+              "Двигатель: 2.0-литровый Skyactiv-G",
+              "Мощность: 184 л.с.",
+              "Трансмиссия: 6-ступенчатая механическая",
+              "Привод: Задний",
+              "Вместимость: 2 места"
+          ],
+          "price": 9000000,
+          "availability": "В наличии",
+          "star_rating": 4.1,
+          "rating_count": 1500,
+          "category": "Roadsters",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 3915 x 1735 x 1235 мм <br> Вес: 1130 кг <br> Максимальная скорость: 220 км/ч"
+      },
+      {
+          "title": "Audi A6 Avant",
+          "manufacturer": "Audi",
+          "cover_img": "https://audi-maximum.ru/img/pics/models/A6Avant/side/Серебристый.png",
+          "description": "Практичный универсал премиум-класса с динамичным дизайном и высоким комфортом.",
+          "specifications": [
+              "Двигатель: 2.0-литровый TFSI",
+              "Мощность: 245 л.с.",
+              "Трансмиссия: 7-ступенчатая S Tronic",
+              "Привод: Полный",
+              "Вместимость: 5 мест"
+          ],
+          "price": 8000000,
+          "availability": "Под заказ",
+          "star_rating": 4.5,
+          "rating_count": 2100,
+          "category": "Universal",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4939 x 1886 x 1466 мм <br> Вес: 1900 кг <br> Максимальная скорость: 250 км/ч"
+      },
+      {
+          "title": "Mercedes-Benz E-Class",
+          "manufacturer": "Mercedes-Benz",
+          "cover_img": "https://www.baikalia.com/storage/app/media/%20мерс.png",
+          "description": "Премиальный седан с элегантным дизайном и передовыми технологиями.",
+          "specifications": [
+              "Двигатель: 2.0-литровый бензиновый",
+              "Мощность: 197 л.с.",
+              "Трансмиссия: 9-ступенчатая автоматическая",
+              "Привод: Задний",
+              "Вместимость: 5 мест"
+          ],
+          "price": 5100000,
+          "availability": "В наличии",
+          "star_rating": 4.7,
+          "rating_count": 3400,
+          "category": "Sedans",
+          "other_info": "Гарантия: 4 года или 100 000 км <br> Габариты: 4923 x 1852 x 1468 мм <br> Вес: 1715 кг <br> Максимальная скорость: 250 км/ч"
+      },
+      {
+          "title": "Hyundai Sonata",
+          "manufacturer": "Hyundai",
+          "cover_img": "https://apiweb.rolf.ru/storage/thumbnails/large/models/81-hyundai/1389-sonata/f659827a5002b138c1279c9c95ff9de2.png",
+          "description": "Стильный и надежный седан с современными функциями безопасности.",
+          "specifications": [
+              "Двигатель: 2.5-литровый бензиновый",
+              "Мощность: 180 л.с.",
+              "Трансмиссия: 6-ступенчатая автоматическая",
+              "Привод: Передний",
+              "Вместимость: 5 мест"
+          ],
+          "price": 2900000,
+          "availability": "В наличии",
+          "star_rating": 4.3,
+          "rating_count": 2100,
+          "category": "Sedans",
+          "other_info": "Гарантия: 3 года или 60 000 км <br> Габариты: 4900 x 1860 x 1445 мм <br> Вес: 1500 кг <br> Максимальная скорость: 220 км/ч"
+      },
+      {
+          "title": "Kia K5",
+          "manufacturer": "Kia",
+          "cover_img": "https://akira-auto.ru/netcat_files/31/46/Screenshot_2_4.jpg",
+          "description": "Современный седан с выразительным дизайном и широким набором опций.",
+          "specifications": [
+              "Двигатель: 2.0-литровый бензиновый",
+              "Мощность: 150 л.с.",
+              "Трансмиссия: 6-ступенчатая автоматическая",
+              "Привод: Передний",
+              "Вместимость: 5 мест"
+          ],
+          "price": 2700000,
+          "availability": "Под заказ",
+          "star_rating": 4.6,
+          "rating_count": 1800,
+          "category": "Sedans",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4905 x 1860 x 1445 мм <br> Вес: 1510 кг <br> Максимальная скорость: 210 км/ч"
+      },
+      {
+          "title": "Porsche 718 Boxster",
+          "manufacturer": "Porsche",
+          "cover_img": "https://vehicle-images.dealerinspire.com/stock-images/porsche/07b0ad2b020beff8ea8bc58d37460641.jpg",
+          "description": "Спортивный родстер с динамичным управлением и великолепной аэродинамикой.",
+          "specifications": [
+              "Двигатель: 2.0-литровый турбированный",
+              "Мощность: 300 л.с.",
+              "Трансмиссия: 7-ступенчатая PDK",
+              "Привод: Задний",
+              "Вместимость: 2 места"
+          ],
+          "price": 7200000,
+          "availability": "Под заказ",
+          "star_rating": 4.9,
+          "rating_count": 2400,
+          "category": "Roadsters",
+          "other_info": "Гарантия: 4 года или 120 000 км <br> Габариты: 4379 x 1801 x 1273 мм <br> Вес: 1335 кг <br> Максимальная скорость: 275 км/ч"
+      },
+      {
+          "title": "BMW Z4",
+          "manufacturer": "BMW",
+          "cover_img": "https://images.dealer.com/autodata/us/640/color/2025/USD50BMC241A0/300.jpg",
+          "description": "Элегантный родстер с мощным двигателем и высоким уровнем комфорта.",
+          "specifications": [
+              "Двигатель: 2.0-литровый турбированный",
+              "Мощность: 258 л.с.",
+              "Трансмиссия: 8-ступенчатая автоматическая",
+              "Привод: Задний",
+              "Вместимость: 2 места"
+          ],
+          "price": 6000000,
+          "availability": "В наличии",
+          "star_rating": 4.0,
+          "rating_count": 2100,
+          "category": "Roadsters",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4324 x 1864 x 1304 мм <br> Вес: 1485 кг <br> Максимальная скорость: 250 км/ч"
+      },
+      {
+          "title": "Mazda MX-5 RF",
+          "manufacturer": "Mazda",
+          "cover_img": "https://cardana.ru/img/auto/mazda/mx_5/4_generation_restyling/rf/rf_1b.jpg",
+          "description": "Родстер с жесткой крышей, сочетание элегантности и спортивности.",
+          "specifications": [
+              "Двигатель: 2.0-литровый Skyactiv-G",
+              "Мощность: 184 л.с.",
+              "Трансмиссия: 6-ступенчатая механическая",
+              "Привод: Задний",
+              "Вместимость: 2 места"
+          ],
+          "price": 3400000,
+          "availability": "В наличии",
+          "star_rating": 4.9,
+          "rating_count": 1600,
+          "category": "Roadsters",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 3915 x 1735 x 1235 мм <br> Вес: 1135 кг <br> Максимальная скорость: 220 км/ч"
+      },
+      {
+          "title": "Volvo V90 Cross Country",
+          "manufacturer": "Volvo",
+          "cover_img": "https://mosautoshina.ru/i/auto/volvo_v90-cross-country_2024.jpg",
+          "description": "Просторный и безопасный универсал для любых дорог и погодных условий.",
+          "specifications": [
+              "Двигатель: 2.0-литровый T5",
+              "Мощность: 250 л.с.",
+              "Трансмиссия: 8-ступенчатая автоматическая",
+              "Привод: Полный",
+              "Вместимость: 5 мест"
+          ],
+          "price": 5700000,
+          "availability": "Под заказ",
+          "star_rating": 4.8,
+          "rating_count": 2000,
+          "category": "Universal",
+          "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4936 x 1890 x 1543 мм <br> Вес: 1882 кг <br> Максимальная скорость: 210 км/ч"
+      },
+      {
+          "title": "Skoda Superb Combi",
+          "manufacturer": "Skoda",
+          "cover_img": "https://afxfuvomxq.cloudimg.io/v7/https://www.autoplenum.de/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLzFyQnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8cfe0e288ba31b7f5e8c580a42612440bb1ff306/skoda-superb-kombi-2008-seitlich-vorne-1200005.jpg",
+          "description": "Практичный универсал с большим багажным отделением и экономичным двигателем.",
+          "specifications": [
+              "Двигатель: 2.0-литровый TSI",
+              "Мощность: 190 л.с.",
+              "Трансмиссия: 7-ступенчатая DSG",
+              "Привод: Передний",
+              "Вместимость: 5 мест"
+          ],
+          "price": 3400000,
+          "availability": "В наличии",
+          "star_rating": 4.1,
+          "rating_count": 1700,
+          "category": "Universal",
+          "other_info": "Гарантия: 2 года или 60 000 км <br> Габариты: 4862 x 1864 x 1477 мм <br> Вес: 1535 кг <br> Максимальная скорость: 230 км/ч"
+      },
+        {
+        "title": "Lexus ES 250",
+        "manufacturer": "Lexus",
+        "cover_img": "https://e-k2.ru/upload/iblock/cbf/e7f1y9r2fpad69d97hl46z3hqymsmbw0.jpg",
+        "description": "Роскошный седан с высоким уровнем комфорта и передовыми функциями безопасности.",
+        "specifications": [
+            "Двигатель: 2.5-литровый бензиновый",
+            "Мощность: 203 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Передний",
+            "Вместимость: 5 мест"
+        ],
+        "price": 4100000,
+        "availability": "В наличии",
+        "star_rating": 4.7,
+        "rating_count": 2800,
+        "category": "Sedans",
+        "other_info": "Гарантия: 4 года или 100 000 км <br> Габариты: 4975 x 1865 x 1445 мм <br> Вес: 1700 кг <br> Максимальная скорость: 210 км/ч"
+        },
+        {
+        "title": "Genesis G80",
+        "manufacturer": "Genesis",
+        "cover_img": "https://rostov.agat-group.com/upload/07/07287f756e493fdd8daf017176a92b97.png",
+        "description": "Премиальный седан с изысканным дизайном и передовыми технологиями.",
+        "specifications": [
+            "Двигатель: 2.5-литровый турбированный",
+            "Мощность: 304 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+        ],
+        "price": 4700000,
+        "availability": "Под заказ",
+        "star_rating": 4.8,
+        "rating_count": 2300,
+        "category": "Sedans",
+        "other_info": "Гарантия: 5 лет или 150 000 км <br> Габариты: 4995 x 1925 x 1465 мм <br> Вес: 1875 кг <br> Максимальная скорость: 250 км/ч"
+        },
+        {
+        "title": "Jaguar F-Type Convertible",
+        "manufacturer": "Jaguar",
+        "cover_img": "https://vehicle-images.dealerinspire.com/2f26-110006828/SAJD55FE7RCK87398/b8f800fb220c0c1b6a82a2d6768fdeb9.jpg",
+        "description": "Элегантный родстер с мощным двигателем и ярким дизайном.",
+        "specifications": [
+            "Двигатель: 5.0-литровый V8",
+            "Мощность: 450 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Задний",
+            "Вместимость: 2 места"
+        ],
+        "price": 8500000,
+        "availability": "Под заказ",
+        "star_rating": 4.9,
+        "rating_count": 1900,
+        "category": "Roadsters",
+        "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4482 x 1923 x 1311 мм <br> Вес: 1655 кг <br> Максимальная скорость: 285 км/ч"
+        },
+        {
+        "title": "Chevrolet Corvette Stingray",
+        "manufacturer": "Chevrolet",
+        "cover_img": "https://autopremiumgroup.ru/m/_versions/chevrolet/corvette2023/cp4_whitepearl_image_series_preview.png",
+        "description": "Икона американского автопрома с невероятной динамикой и харизмой.",
+        "specifications": [
+            "Двигатель: 6.2-литровый V8",
+            "Мощность: 495 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Задний",
+            "Вместимость: 2 места"
+        ],
+        "price": 9500000,
+        "availability": "В наличии",
+        "star_rating": 5.0,
+        "rating_count": 2700,
+        "category": "Roadsters",
+        "other_info": "Гарантия: 3 года или 60 000 км <br> Габариты: 4630 x 1934 x 1234 мм <br> Вес: 1525 кг <br> Максимальная скорость: 312 км/ч"
+        },
+        {
+            "title": "Volvo V90 Cross Country",
+            "manufacturer": "Volvo",
+            "cover_img": "https://www.majorcars.ru/images/models/v90/img2.jpg",
+            "description": "Стильный универсал с повышенной проходимостью и премиальным интерьером.",
+            "specifications": [
+            "Двигатель: 2.0-литровый турбированный бензиновый",
+            "Мощность: 250 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 5200000,
+            "availability": "В наличии",
+            "star_rating": 4.8,
+            "rating_count": 2100,
+            "category": "Universal",
+            "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4939 x 1879 x 1543 мм <br> Объем багажника: 560 л <br> Максимальная скорость: 230 км/ч"
+        },
+        {
+            "title": "Subaru Outback",
+            "manufacturer": "Subaru",
+            "cover_img": "https://s.auto.drom.ru/i24275/c/photos/fullsize/subaru/outback/gen473_subaru_outback_1104367.jpg",
+            "description": "Надежный универсал с отличной проходимостью для любых дорог.",
+            "specifications": [
+            "Двигатель: 2.5-литровый бензиновый",
+            "Мощность: 182 л.с.",
+            "Трансмиссия: Вариатор (CVT)",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 3800000,
+            "availability": "Под заказ",
+            "star_rating": 4.7,
+            "rating_count": 3000,
+            "category": "Universal",
+            "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4870 x 1875 x 1675 мм <br> Объем багажника: 561 л <br> Максимальная скорость: 200 км/ч"
+        },
+        {
+            "title": "Audi A6 Avant",
+            "manufacturer": "Audi",
+            "cover_img": "https://audi-maximum.ru/img/pics/models/A6Avant/side/Серебристый.png",
+            "description": "Премиальный универсал с передовыми технологиями и спортивной динамикой.",
+            "specifications": [
+            "Двигатель: 2.0-литровый турбированный",
+            "Мощность: 245 л.с.",
+            "Трансмиссия: 7-ступенчатый робот",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 6100000,
+            "availability": "В наличии",
+            "star_rating": 4.9,
+            "rating_count": 2200,
+            "category": "Universal",
+            "other_info": "Гарантия: 3 года или 100 000 км <br> Габариты: 4940 x 1890 x 1470 мм <br> Объем багажника: 565 л <br> Максимальная скорость: 250 км/ч"
+        },
+        {
+            "title": "Tesla Model Y",
+            "manufacturer": "Tesla",
+            "cover_img": "https://moscowteslaclub.ru/upload/resize_cache/iblock/b1a/1266_715_2/u9d3mw4d1s4t0qgujlsploi1axmvxwfs.jpg",
+            "description": "Электрический кроссовер с большим запасом хода и передовыми функциями автопилота.",
+            "specifications": [
+            "Аккумулятор: 82 кВт·ч",
+            "Мощность: 384 л.с.",
+            "Запас хода: 505 км",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 6700000,
+            "availability": "В наличии",
+            "star_rating": 4.8,
+            "rating_count": 5000,
+            "category": "Electric vehicles",
+            "other_info": "Гарантия: 8 лет или 160 000 км <br> Разгон 0-100 км/ч: 3.7 с <br> Максимальная скорость: 217 км/ч"
+        },
+        {
+            "title": "BMW i4",
+            "manufacturer": "BMW",
+            "cover_img": "https://www.cartecgroup.com/app/uploads/2023/11/1697713715FRONTSIDE-71AW-1697713709704.png",
+            "description": "Электрический седан с впечатляющей динамикой и премиальным дизайном.",
+            "specifications": [
+            "Аккумулятор: 83.9 кВт·ч",
+            "Мощность: 544 л.с.",
+            "Запас хода: 590 км",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 7200000,
+            "availability": "Под заказ",
+            "star_rating": 4.9,
+            "rating_count": 3100,
+            "category": "Electric vehicles",
+            "other_info": "Гарантия: 8 лет или 160 000 км <br> Разгон 0-100 км/ч: 3.9 с <br> Максимальная скорость: 225 км/ч"
+        },
+        {
+            "title": "Hyundai Ioniq 5",
+            "manufacturer": "Hyundai",
+            "cover_img": "https://images.dealer.com/ddc/vehicles/2025/Hyundai/IONIQ%205%20N/SUV/color/Atlas%20White-SAW-234,236,235-640-en_US.jpg",
+            "description": "Футуристический электрический кроссовер с просторным интерьером.",
+            "specifications": [
+            "Аккумулятор: 77.4 кВт·ч",
+            "Мощность: 325 л.с.",
+            "Запас хода: 430 км",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 4800000,
+            "availability": "В наличии",
+            "star_rating": 4.7,
+            "rating_count": 2800,
+            "category": "Electric vehicles",
+            "other_info": "Гарантия: 8 лет или 160 000 км <br> Разгон 0-100 км/ч: 5.2 с <br> Максимальная скорость: 185 км/ч"
+        },
+        {
+            "title": "Toyota Land Cruiser 300",
+            "manufacturer": "Toyota",
+            "cover_img": "https://api2.ma.ru/images/models/toyota/land%20cruiser%20300/28415/28415_medium.jpg",
+            "description": "Легендарный внедорожник с мощным двигателем и непревзойденной проходимостью.",
+            "specifications": [
+            "Двигатель: 3.5-литровый V6 Twin-Turbo",
+            "Мощность: 415 л.с.",
+            "Трансмиссия: 10-ступенчатая автоматическая",
+            "Привод: Полный",
+            "Вместимость: 7 мест"
+            ],
+            "price": 9000000,
+            "availability": "Под заказ",
+            "star_rating": 5.0,
+            "rating_count": 4500,
+            "category": "SUVs",
+            "other_info": "Гарантия: 3 года или 100 000 км <br> Максимальная скорость: 210 км/ч"
+        },
+        {
+            "title": "Kia Sorento",
+            "manufacturer": "Kia",
+            "cover_img": "https://www.avtogermes.ru/images/marks/kia/sorento/iv-restajling/colors/_2/8c3f020911d41356f0ee1d888c25f0c2.png",
+            "description": "Практичный и стильный внедорожник с просторным салоном.",
+            "specifications": [
+            "Двигатель: 2.2-литровый турбодизель",
+            "Мощность: 202 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Полный",
+            "Вместимость: 7 мест"
+            ],
+            "price": 3800000,
+            "availability": "В наличии",
+            "star_rating": 4.7,
+            "rating_count": 2900,
+            "category": "SUVs",
+            "other_info": "Гарантия: 5 лет или 150 000 км <br> Объем багажника: 616 л <br> Максимальная скорость: 190 км/ч"
+        },
+        {
+            "title": "Jeep Grand Cherokee",
+            "manufacturer": "Jeep",
+            "cover_img": "https://apiweb.rolf.ru/storage/thumbnails/large/models/92-jeep/1543-grand_cherokee/e652d3551073a0f4a317ab398a58cea4.png",
+            "description": "Мощный внедорожник с премиальным комфортом и передовыми технологиями.",
+            "specifications": [
+            "Двигатель: 3.6-литровый V6",
+            "Мощность: 290 л.с.",
+            "Трансмиссия: 8-ступенчатая автоматическая",
+            "Привод: Полный",
+            "Вместимость: 5 мест"
+            ],
+            "price": 5700000,
+            "availability": "Под заказ",
+            "star_rating": 4.8,
+            "rating_count": 3300,
+            "category": "SUVs",
+            "other_info": "Гарантия: 3 года или 100 000 км <br> Объем багажника: 1027 л <br> Максимальная скорость: 209 км/ч"
+        }
+    ]
+}
