@@ -50,11 +50,15 @@ async function initializePage() {
       case "cars-page":
         await initializecarsPage();
         break;
+      case "car-detail-page":
+        await initializecarDetailPage();
+        break;
       default:
         console.log("Неизвестный тип страницы");
     }
 
     setupScrollAnimations();
+    addcarImageClickListeners();
     console.log("Инициализация страницы завершена");
     isInitialized = true;
   } catch (error) {
@@ -260,36 +264,67 @@ function createcarHTML(car, index) {
       </figure>
       <div class="car__title">${car.title}</div>
       <div class="car__availability">${car.availability}</div>
-      <div class="car__rating">${
-        car.star_rating
-          ? `${car.star_rating.toFixed(1)} ${renderStarRating(car.star_rating)} <br> (${car.rating_count.toLocaleString()})`
-          : "Нет оценок"
-      }</div>
       <a href="car-detail.html?title=${car.title}" target="_blank" class="btn">Детали</a>
     </div>
   `;
 }
 
-function renderStarRating(rating) {
-  const fullStars = Math.floor(rating);
-  const halfStar = rating % 1;
-  const emptyStars = 5 - fullStars - 1;
-  const starsHtml = [];
-  for (let i = 0; i < fullStars; i++) {
-    starsHtml.push('<span class="full-star">⭐️</span>');
+async function initializecarDetailPage() {
+  console.log("Инициализация страницы деталей автомобиля");
+  const detailContainer = document.getElementById("car-detail-container");
+  
+  if (!detailContainer) {
+    console.error("Контейнер деталей автомобиля не найден");
+    return;
   }
-  if (halfStar > 0) {
-    starsHtml.push('<span class="half-star" style="clip-path: inset(0 ' + (100 - halfStar * 100) + '% 0 0)">⭐️</span>');
+
+  detailContainer.innerHTML = '<div class="loading">Загрузка данных автомобиля...</div>';
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const title = urlParams.get("title");
+
+  if (!title) {
+    console.error("Название автомобиля не указано в URL");
+    displayError("Не выбран автомобиль. Пожалуйста, вернитесь назад и выберите автомобиль.");
+    return;
   }
-  for (let i = 0; i < emptyStars; i++) {
-    starsHtml.push('<span class="empty-star">☆</span>');
+
+  let car = JSON.parse(sessionStorage.getItem('currentcarDetail'));
+
+  if (!car) {
+    const cars = await fetchcars();
+    car = cars.find((b) => b.title === title);
   }
-  return `<span class="star-rating">${starsHtml.join('')}</span>`;
+
+  if (!car) {
+    console.error("Автомобиль не найден");
+    displayError("Автомобиль не найден. Попробуйте ещё раз или выберите другой.");
+    return;
+  }
+
+  detailContainer.innerHTML = createcarDetailHTML(car);
+  console.log("Страница деталей автомобиля загружена");
 }
 
-function createGoogleAffiliateLink(car) {
-  const searchTerm = car.title || `${car.title} ${car.author}`;
-  return `https://www.google.com/search?q=${encodeURIComponent(searchTerm)}`;
+function createcarDetailHTML(car) {
+  return `
+    <div class="car-info">
+      <h1 class="car-title">${car.title}</h1>
+      <p class="car-manufacturer">Производитель: ${car.manufacturer}</p>
+      <p class="car-category"><strong>Категория:</strong> ${car.category}</p>
+      <p class="car-price"><strong>Цена:</strong> ${car.price} ₽</p>
+      <div class="car-bio">
+        <h2>Описание</h2>
+        <p>${car.description}</p>
+      </div>
+    </div>
+  `;
+}
+function displayError(message) {
+  const detailContainer = document.getElementById("car-detail-container");
+  if (detailContainer) {
+    detailContainer.innerHTML = `<p class="error-message">${message}</p>`;
+  }
 }
 
 async function initializeHomePage() {
@@ -352,6 +387,49 @@ function setupScrollAnimations() {
 
   document.querySelectorAll(".animate-on-scroll").forEach((element) => {observer.observe(element);
   });
+}
+
+function addcarImageClickListeners() {
+  console.log("Добавляем слушатели кликов по изображениям автомобилей");
+  const carContainers = document.querySelectorAll(
+    "#top-rated, .carousel-container, .carousel, #best-sellers"
+  );
+  carContainers.forEach((container) => {
+    container.addEventListener("click", handlecarImageClick);
+  });
+}
+
+async function handlecarImageClick(event) {
+  const carImg = event.target.closest(".car__img");
+  if (carImg) {
+    const carElement = carImg.closest(".car");
+    if (carElement) {
+      const title = carElement.getAttribute("data-key");
+      if (title) {
+        event.preventDefault();
+        console.log(`Подготовка к переходу на страницу автомобиля с названием: ${title}`);
+        await navigateTocarDetail(title);
+      }
+    }
+  }
+}
+
+async function navigateTocarDetail(title) {
+  try {
+    const cars = await fetchcars();
+    const car = cars.find(b => b.title === title);
+
+    if (!car) {
+      throw new Error('Автомобиль не найден');
+    }
+
+    sessionStorage.setItem('currentcarDetail', JSON.stringify(car));
+
+    window.location.href = `car-detail.html?title=${title}`;
+  } catch (error) {
+    console.error('Ошибка при переходе к странице деталей автомобиля:', error);
+    alert('Произошла ошибка при загрузке деталей автомобиля. Попробуйте ещё раз.');
+  }
 }
 
 function getCategoryId(category) {
