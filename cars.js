@@ -264,6 +264,11 @@ function createcarHTML(car, index) {
       </figure>
       <div class="car__title">${car.title}</div>
       <div class="car__availability">${car.availability}</div>
+      <div class="car__rating">${
+        car.star_rating
+          ? `${car.star_rating.toFixed(1)} ${renderStarRating(car.star_rating)} <br> (${car.rating_count.toLocaleString()})`
+          : "Нет оценок"
+      }</div>
       <a href="car-detail.html?title=${car.title}" target="_blank" class="btn">Детали</a>
     </div>
   `;
@@ -308,15 +313,33 @@ async function initializecarDetailPage() {
 
 function createcarDetailHTML(car) {
   return `
+    <div class="car-cover">
+      <img src="${car.cover_img || "/assets/no_img_car_cover.svg"}" alt="${car.title}" class="car-img">
+    </div>
     <div class="car-info">
       <h1 class="car-title">${car.title}</h1>
       <p class="car-manufacturer">Производитель: ${car.manufacturer}</p>
+      <div class="car-rating">
+        ${renderStarRating(car.star_rating)} ${car.star_rating.toFixed(1)} 
+        (${car.rating_count.toLocaleString()} отзывов)
+      </div>
       <p class="car-category"><strong>Категория:</strong> ${car.category}</p>
       <p class="car-price"><strong>Цена:</strong> ${car.price} ₽</p>
       <div class="car-bio">
         <h2>Описание</h2>
         <p>${car.description}</p>
       </div>
+      <div class="car-specifications">
+        <h2>Характеристики</h2>
+        <ul>
+          ${car.specifications.map((review) => `<li>${review}</li>`).join("")}
+        </ul>
+      </div>
+      <div class="car-other-info">
+        <h2>Дополнительная информация</h2>
+        <p>${car.other_info}</p>
+      </div>
+      <a href="${createGoogleAffiliateLink(car)}" class="btn" target="_blank">Посмотреть в Google</a>
     </div>
   `;
 }
@@ -325,6 +348,28 @@ function displayError(message) {
   if (detailContainer) {
     detailContainer.innerHTML = `<p class="error-message">${message}</p>`;
   }
+}
+
+function renderStarRating(rating) {
+  const fullStars = Math.floor(rating);
+  const halfStar = rating % 1;
+  const emptyStars = 5 - fullStars - 1;
+  const starsHtml = [];
+  for (let i = 0; i < fullStars; i++) {
+    starsHtml.push('<span class="full-star">⭐️</span>');
+  }
+  if (halfStar > 0) {
+    starsHtml.push('<span class="half-star" style="clip-path: inset(0 ' + (100 - halfStar * 100) + '% 0 0)">⭐️</span>');
+  }
+  for (let i = 0; i < emptyStars; i++) {
+    starsHtml.push('<span class="empty-star">☆</span>');
+  }
+  return `<span class="star-rating">${starsHtml.join('')}</span>`;
+}
+
+function createGoogleAffiliateLink(car) {
+  const searchTerm = car.title || `${car.title} ${car.author}`;
+  return `https://www.google.com/search?q=${encodeURIComponent(searchTerm)}`;
 }
 
 async function initializeHomePage() {
