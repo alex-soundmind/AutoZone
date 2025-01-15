@@ -934,3 +934,35 @@ h3 {
     transform: rotate(360deg);
   }
 }
+
+.comparison-page {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.comparison-column {
+  width: 45%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-column figure {
+  text-align: center;
+}
+
+.comparison-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.compp {
+  width: 150px;
+  height: 40px;
+}
+
+.car-image {
+  height: 200px;
+  width: auto;
+}

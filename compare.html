@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сравнение автомобилей</title>
+  <link rel="stylesheet" href="cars.css">
+  <style>
+    .comparison-table {
+      display: table;
+      width: 80%;
+      border-collapse: collapse;
+      margin-left: 10%;
+    }
+    .comparison-table .header, .comparison-table .row {
+      display: table-row;
+    }
+    .comparison-table .cell {
+      display: table-cell;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    .comparison-table .header .cell {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+    .car-image {
+      width: 150px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+    <div class="cars__header">
+        <h3 >
+            <a class="section__title cars__header--title" href="cars.html">Вернуться в каталог</a>
+        </h2>
+      </div>
+      <div id="comparison-table"></div> 
+  <script src="compare.js"></script>
+</body>
+</html>

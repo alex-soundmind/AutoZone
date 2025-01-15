@@ -256,6 +256,38 @@ function rendercars(carsToRender, container) {
   console.log(`Отображено ${carsToRender.length} автомобилей`);
 }
 
+let compareList = [];
+
+function handleCompareButtonClick(car) {
+  const carIndex = compareList.findIndex((item) => item.title === car.title);
+
+  if (carIndex !== -1) {
+    compareList.splice(carIndex, 1);
+    alert(`${car.title} удален из списка сравнения`);
+  } else {
+    if (compareList.length < 2) {
+      compareList.push(car);
+      alert(`${car.title} добавлен в список сравнения`);
+    } else {
+      const removedCar = compareList.shift();
+      compareList.push(car);
+      alert(
+        `${removedCar.title} был удален из списка, а ${car.title} добавлен`
+      );
+    }
+  }
+  console.log("Текущий список сравнения:", compareList);
+}
+
+function openComparisonPage() {
+  if (compareList.length < 2) {
+    alert("Добавьте два автомобиля для сравнения");
+    return;
+  }
+  localStorage.setItem("compareList", JSON.stringify(compareList));
+  window.location.href = "compare.html";
+}
+
 function createcarHTML(car, index) {
   return `
     <div class="car animate-on-scroll" data-key="${car.title}" style="animation-delay: ${index * 0.05}s;">
@@ -269,9 +301,16 @@ function createcarHTML(car, index) {
           ? `${car.star_rating.toFixed(1)} ${renderStarRating(car.star_rating)} <br> (${car.rating_count.toLocaleString()})`
           : "Нет оценок"
       }</div>
-      <a href="car-detail.html?title=${car.title}" target="_blank" class="btn">Детали</a>
+      <button class="btn compare-btn" onclick='handleCompareButtonClick(${JSON.stringify(
+        car
+      )})'>Сравнить</button>
+      <button class="btn" onclick="openCarDetails('${car.title}')">Детали</button>
     </div>
   `;
+}
+
+function openCarDetails(title) {
+  window.open(`car-detail.html?title=${title}`, '_blank');
 }
 
 async function initializecarDetailPage() {
